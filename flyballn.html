@@ -169,22 +169,20 @@
             }
             count += 1;
             if (m01Flg != 1) {
-
                 balln.position.x += 0.015;
-                balln.position.z -= flycount ** 2 * 0.01;
+                balln.position.z -= flycount ** 2 * 0.0025;
                 balln1.position.x += 0.015;
-                balln1.position.y += 0.01;
-                balln1.position.z -= flycount ** 2 * 0.01;
+                balln1.position.y -= 0.01;
+                balln1.position.z -= flycount ** 2 * 0.0025;
                 balln2.position.y += 0.02;
-                balln2.position.z -= flycount ** 2 * 0.01;
+                balln2.position.z -= flycount ** 2 * 0.0025;
                 balln3.position.x -= 0.015;
                 balln3.position.y += 0.01;
-                balln3.position.z -= flycount ** 2 * 0.01;
+                balln3.position.z -= flycount ** 2 * 0.0025;
                 balln4.position.x -= 0.015;
-                balln4.position.y -= 0.01;
-                balln4.position.z -= flycount ** 2 * 0.01;
+                balln4.position.y += 0.01;
+                balln4.position.z -= flycount ** 2 * 0.0025;
                 flycount += 0.05;
-
             }
             renderer.render(scene, camera);
         }
